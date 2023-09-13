@@ -1,0 +1,109 @@
+*{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+div{
+    border: 1px solid black;
+    margin: 5px;
+}
+
+body{
+    width: 1000px;
+    
+}
+
+.header{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.navi{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    border: none;
+}
+
+.navi .right, .navi .left{
+    display: flex;
+    flex-direction: row;
+    border: none;
+    position: relative;
+}
+
+.navi .right div, .navi .left div{
+    height: 32px;
+    width: 32px;
+    background-color: aqua;
+}
+
+.navi .left{
+    position: absolute;
+    left: 5px;
+}
+
+.navi .right{
+    position: absolute;
+    right: 5px;
+}
+
+.search{
+    position: absolute;
+    top: 35%;
+    width: 65%;
+    height: 25%;
+    border-radius: 50px;
+}
+
+.shortcuts{
+    position: absolute;
+    top: 68%;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40px;
+    border: none;
+}
+
+.shortcuts .shortcuts-box{
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    border: none;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 15%;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 1500px;
+}
+
+.left-container, .right-container{
+    height: 95%;
+    justify-content: space-around;
+}
+
+.left-container{
+    width: 60%;
+}
+
+.right-container{
+    width: 35%;
+}
+
+.left-container div, .right-container div{
+    width: 90%;
+}
