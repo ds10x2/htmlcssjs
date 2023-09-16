@@ -59,7 +59,7 @@ async function solveSudoku(){
                 if(!cell.classList.contains("user-input")){
                     cell.value = sudokuArray[row][col];
                     cell.classList.add("solved");
-                    await sleep(20); //시각화에 딜레이를 넣음
+                    await sleep(20); //시각화에 딜레이를 넣음 
                 }
             }
         }
